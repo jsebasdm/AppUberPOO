@@ -1,0 +1,86 @@
+@startuml
+class Account {
+    id : Integer
+    name : String
+    document : String
+    email : String
+    password : String
+}
+class Car {
+    id : Integer
+    license : String
+    driver : String
+    passenger : String
+}
+class Route {
+    id : Integer
+    start : ArrayList<Double>
+    end : ArrayList<Double>
+}
+class Payment {
+    id : Integer
+}
+class User {
+    id : Integer
+}
+class Driver {
+    id : Integer
+}
+class Card {
+    id : Integer
+    number : Integer
+    CVV : Integer
+    date: String
+}
+class Paypal {
+    id : Integer
+    email : String
+}
+class Cash {
+    id : Integer
+}
+class UberX {
+    id : Integer
+    brand : String
+    model : String
+}
+class UberPool {
+    id : Integer
+    brand : String
+    model : String
+}
+class UberBlack {
+    id : Integer
+    typeCarAccepted : Map<String, ArrayList<String, Integer>>
+    seatsMaterial : ArrayList<String>
+}
+class UberVan {
+    id : Integer
+    typeCarAccepted : Map<String, ArrayList<String, Integer>>
+    seatsMaterial : ArrayList<String>
+}
+class Trip {
+    id : Integer
+    user : User
+    car : Car
+    route : Route
+    amount : Double
+    payment : Payment
+    progress : Double
+    completed : Boolean
+}
+Car <|-- UberX
+Car <|-- UberPool
+Car <|-- UberBlack
+Car <|-- UberVan
+Payment <|-- Cash
+Payment <|-- Card
+Payment <|-- Paypal
+Trip *-- Car
+Trip *-- Route
+Trip *-- Payment
+Account <|-- Driver
+Account <|-- User
+User <-- Trip
+Driver <-- Car
+@enduml
