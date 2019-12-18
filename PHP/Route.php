@@ -1,8 +1,9 @@
 <?php
 //Clase ruta
-class Route {
+class Route
+{
     // Atributos o propiedades de la clase
     public $id;
-    public $start;
-    public $end;
+    public $start = array();
+    public $end = array();
 }

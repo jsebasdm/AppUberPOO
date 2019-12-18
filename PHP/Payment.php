@@ -1,6 +1,7 @@
 <?php
 //Clase pago
-class Payment {
+class Payment
+{
     // Atributos o propiedades de la clase
-    public id;
+    public $id;
 }

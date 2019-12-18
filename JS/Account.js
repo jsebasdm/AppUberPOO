@@ -1,9 +1,12 @@
 //Clase cuenta
-function Account() {
-    // Atributos o propiedades de la clase
-    this.id;
-    this.name;
-    this.document;
-    this.email;
-    this.password;
+class Account {
+    //Método constructor
+    constructor(name, document) {
+        // Atributos o propiedades de la clase
+        this.id;
+        this.name = name;
+        this.document = document;
+        this.email;
+        this.password;
+    }
 }
