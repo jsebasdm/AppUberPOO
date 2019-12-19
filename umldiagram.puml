@@ -7,10 +7,15 @@ class Account {
     password : String
 }
 class Car {
-    id : Integer
-    license : String
-    driver : String
-    passenger : String
+    -id : Integer
+    -license : String
+    -driver : String
+    -passenger : String
+    +showDataCar() : void
+    +setPassenger(Integer passenger) : void
+    +getPassenger() : Integer
+    +getId() : Integer
+    +setId(Integer id) : void
 }
 class Route {
     id : Integer
@@ -40,34 +45,50 @@ class Cash {
     id : Integer
 }
 class UberX {
-    id : Integer
-    brand : String
-    model : String
+    -id : Integer
+    -brand : String
+    -model : String
+    +getId() : Integer
+    +setId(Integer id) : void
 }
 class UberPool {
-    id : Integer
-    brand : String
-    model : String
+    -id : Integer
+    -brand : String
+    -model : String
+    +getId() : Integer
+    +setId(Integer id) : void
 }
 class UberBlack {
-    id : Integer
-    typeCarAccepted : Map<String, ArrayList<String, Integer>>
-    seatsMaterial : ArrayList<String>
+    -id : Integer
+    -typeCarAccepted : Map<String, ArrayList<String, Integer>>
+    -seatsMaterial : ArrayList<String>
+    +getId() : Integer
+    +setId(Integer id) : void
 }
 class UberVan {
-    id : Integer
-    typeCarAccepted : Map<String, ArrayList<String, Integer>>
-    seatsMaterial : ArrayList<String>
+    -id : Integer
+    -typeCarAccepted : Map<String, ArrayList<String, Integer>>
+    -seatsMaterial : ArrayList<String>
+    +getId() : Integer
+    +setId(Integer id) : void
 }
 class Trip {
-    id : Integer
-    user : User
-    car : Car
-    route : Route
-    amount : Double
-    payment : Payment
-    progress : Double
-    completed : Boolean
+    -id : Integer
+    +user : User
+    +car : Car
+    +route : Route
+    +payment : Payment
+    -amount : Double
+    -progress : Double
+    -completed : Boolean
+    +isCompleted() : Boolean
+    +setCompleted(boolean completed) : void
+    +getProgress() : Double
+    +setProgress(double progress) : void
+    +getAmount() : Double
+    +setAmount(double amount) : void
+    +getId() : Integer
+    +setId(Integer id) : void
 }
 Car <|-- UberX
 Car <|-- UberPool
