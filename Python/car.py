@@ -1,5 +1,5 @@
 # Importamos las clases
-from account import Account
+from driver import Driver
 
 # Clase carro
 class Car:
@@ -7,7 +7,7 @@ class Car:
     # Atributos o propiedades de la clase
     id = int
     license = str
-    driver = Account("", "")
+    driver = Driver("","")
     passenger = str
 
     # Método constructor

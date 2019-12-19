@@ -1,4 +1,5 @@
 <?php
+//Importamos la clase
 require_once('Car.php');
 //Clase UberX (Hereda de la clase Carro)
 class UberX extends Car

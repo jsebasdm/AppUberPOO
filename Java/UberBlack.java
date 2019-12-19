@@ -8,7 +8,7 @@ class UberBlack extends Car {
     ArrayList<String> seatsMaterial;
 
     // Método constructor
-    public UberBlack(String license, Account driver, Map<String, ArrayList<String, Integer>> typeCarAccepted,
+    public UberBlack(String license, Driver driver, Map<String, ArrayList<String, Integer>> typeCarAccepted,
             ArrayList<String> seatsMaterial) {
         super(license, driver);
         this.typeCarAccepted = typeCarAccepted;

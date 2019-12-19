@@ -3,11 +3,11 @@ class Car {
     // Atributos o propiedades de la clase
     Integer id;
     String license;
-    Account driver;
+    Driver driver;
     Integer passenger;
 
     // Método constructor
-    public Car(String license, Account driver) {
+    public Car(String license, Driver driver) {
         this.license = license;
         this.driver = driver;
     }

@@ -1,4 +1,10 @@
-var uberX = new UberX("AMD123", new Account("Sebas", "12345JSD"), "Bugatti", "Veyron")
-var uberPool = new UberPool("ABC777", new Account("Alejo", "9876AGD"), "Carlsson", "C25")
+var uberX = new UberX("AMD123", new Driver("Sebas", "12345JSD"), "Bugatti", "Veyron")
+var uberPool = new UberPool("ABC777", new User("Alejo", "9876AGD"), "Carlsson", "C25")
+console.log("UBERX:")
+console.log("Brand: " + uberX.brand)
+console.log("Model: " + uberX.model)
 uberX.showDataCar()
+console.log("UBERPOOL:")
+uberPool.passenger = 3
+console.log("Passengers: " + uberPool.passenger)
 uberPool.showDataCar()
